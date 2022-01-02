@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500&family=Poppins:wght@100;200;400;600;700&display=swap" rel="stylesheet">
+  <title>Frontend Mentor | NFT preview card component</title>
+    
+  <style>
+      body{
+          background-color:  hsl(217, 54%, 11%);
+          font-family: 'Outfit', sans-serif;
+        
+      }
+      section{
+          margin-top: 50px;
+          margin-left: auto;
+          margin-right: auto;
+          background-color: hsl(216, 50%, 16%);
+          width: 320px;
+          border-radius: 12px;
+          box-shadow: 0px 0px 30px 24px rgba(34, 60, 80, 0.2);
+      }
+      .top{
+       padding-top: 25px;
+       margin-left: 25px;
+       position:relative;
+      }
+      .top-hover{
+          position: absolute;
+          background: rgba(0, 255, 247, 0.5);
+          width: 270px;
+          height: 270px;
+          margin-top: 25px;
+          margin-left: 25px;
+          border-radius: 5px;
+          z-index: 5;
+          opacity: 0;
+          transition: all 0.3s ease 0s;
+      }
+      .top-hover img{
+          position: absolute;
+          top: 40%;
+          left: 42%;
+      }
+      .top-hover:hover{
+          opacity: 1;
+      }
+      .top img{
+          width: 270px;
+          height: 270px;
+          max-width: 100%;
+          border-radius: 5px;
+      }
+      .title{
+          padding-top: 13px;
+          padding-left: 25px;
+      }
+      .title a{
+          font-weight: 500;
+          color: white;
+          font-size: 18px;
+          text-decoration: none;
+          transition: all 0.4s ease 0s;
+      }
+      .title a:hover{
+          color: hsl(178, 100%, 50%);
+      }
+      .discribe{
+          color:  hsl(215, 51%, 70%);
+          padding-left: 25px;
+          padding-top: 13px;
+          font-size: 16px;
+          line-height: 22px;
+          font-weight: 100;
+      }
+      .eth{
+          display: flex;
+          justify-content: space-around;
+          padding-top: 20px;
+          margin-left: 17px;
+      }
+      .value{
+        display: flex;
+        flex-wrap: nowrap;
+        width: 120px;
+        align-items: center;
+        margin-left: 10px;
+      }
+      .value span{
+          padding-left: 7px;
+          color:hsl(178, 100%, 50%);
+          font-weight: 500;
+          font-size: 14px;
+      }
+       .time{
+        display: flex;
+        flex-wrap: nowrap;
+          width: 120px;
+          align-items: center;
+          padding-left:50px;
+      }
+      .time span{
+          padding-left: 7px;
+          color:  hsl(215, 51%, 70%);
+          font-size: 14px;
+      }
+      .poloska{
+          width: 270px;
+          height: 1.5px;
+          color:  hsl(215, 32%, 27%);
+          background-color:  hsl(215, 32%, 27%);
+          margin: auto;
+          margin-top: 20px;
+      }
+      .footer{
+          display: flex;
+          align-items: center;
+          margin-top: 5px;
+          margin-left: 25px;
+          font-size: 13px;
+         padding-bottom: 25px;
+      }
+      .footer img{
+          max-width: 100%;
+          width: 30px;
+          height: 30px;
+          border: 1px solid white;
+          border-radius: 50%;
+      }
+      .footer p{
+          padding-left: 10px;
+          color:  hsl(215, 51%, 70%);
+      }
+      .footer a{
+          text-decoration: none;
+          color:white;
+          transition: all 0.3s ease 0s;
+      }
+      .footer a:hover{
+          color: hsl(178, 100%, 50%);
+      }
+  </style>
+    
+</head>
+<body>
+    <section>
+        <a href="#"><div class="top-hover"><img src="images/icon-view.svg" alg="eye"></div></a>
+        <div class="top"><img src="images/image-equilibrium.jpg" alt="equilibrium"></div>
+        <div class="title"><a href="#">Equilibrium #3429</a></div>
+        <div class="discribe">Our Equilibrium collection promotes balance and calm.</div>
+            <div class="eth">
+                <div class="value"><img src="images/icon-ethereum.svg" alt="ethereum"><span>0.041 ETH</span></div>
+                <div class="time"><img src="images/icon-clock.svg" alt="clock"><span>3 days left</span></div>
+            </div>
+        <div class="poloska"></div>
+        <div class="footer"><img src="images/image-avatar.png" alt="avatar"><p>Creating of <a href="#">Jules Wyvern</a></p></div>
+        <div></div>
+    </section>
+</body>
+</html>
